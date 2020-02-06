@@ -1,0 +1,376 @@
+//:root {
+//  --mainGray: #FDFDFE;;
+//  --mainShadow: 0px 2px 4px rgba(0, 0, 0, 0.109566);
+//  --mainRadius: 25px;
+//  --textGray: #656565;
+//}
+//
+//body {
+//  background: #FAFAFB;;
+//}
+//
+//.bg-mn-gray {
+//  background-color: var(--mainGray);
+//}
+//
+//.mn-box-shadow {
+//  box-shadow: var(--mainShadow);
+//}
+//
+//.mn-border-radius {
+//  border-radius: var(--mainRadius);
+//}
+//.radius-10 {
+//  border-radius: 10px;
+//}
+//
+//.mn-text-gray {
+//  color: var(--textGray) !important;
+//}
+//.z-inx1{
+//  z-index: 1;
+//}
+//.nav-wrapper {
+//  margin-left: 130px;
+//  .nav-group {
+//    height: 45px;
+//    font-size: 14px;
+//
+//    .nav-item {
+//      transition: 0.4s ease;
+//      text-decoration: none;
+//      &:hover {
+//        color: #000;
+//      }
+//    }
+//
+//    .hot-news {
+//      color: #FF1010;
+//      text-decoration: none;
+//    }
+//
+//    .switch {
+//      position: relative;
+//      display: inline-block;
+//      width: 60px;
+//      height: 9px;
+//    }
+//
+//    .switch input {
+//      opacity: 0;
+//      width: 0;
+//      height: 0;
+//    }
+//
+//    /* The slider */
+//    .slider {
+//      position: absolute;
+//      cursor: pointer;
+//      top: 0;
+//      left: 0;
+//      right: 0;
+//      bottom: 0;
+//      background-color: var(--mainGray);
+//      -webkit-transition: .4s;
+//      transition: .4s;
+//    }
+//
+//    .slider:before {
+//      position: absolute;
+//      content: "";
+//      height: 25px;
+//      width: 25px;
+//      left: 0;
+//      bottom: -4px;
+//      background-color: #FFE9E9;
+//      background-image: url("./img/Shape.png");
+//      background-repeat: no-repeat;
+//      background-position: center;
+//      box-shadow: 0px 1px 1px rgba(160, 12, 12, 0.244018);
+//      -webkit-transition: .4s;
+//      transition: .4s;
+//    }
+//
+//    input:checked + .slider {
+//      background: #ffcec5;
+//      box-shadow: 0px 1px 1px rgba(255, 16, 16, 0.170263), inset 0px 1px 1px rgba(255, 122, 122, 0.5);
+//
+//    }
+//
+//
+//    input:checked + .slider:before {
+//      -webkit-transform: translateX(26px);
+//      -ms-transform: translateX(26px);
+//      transform: translateX(26px);
+//    }
+//
+//    /* Rounded sliders */
+//    .slider.round {
+//      height: 18px;
+//      width: 50px;
+//      border-radius: 34px;
+//    }
+//
+//    .slider.round:before {
+//      border-radius: 50%;
+//    }
+//  }
+//
+//  .nav-search {
+//    position: relative;
+//    width: 445px;
+//    height: 45px;
+//    font-size: 14px;
+//    margin-left: 30px;
+//
+//    .search-icon {
+//      background-image: url("./img/Group.png");
+//      background-position: 28px;
+//      background-repeat: no-repeat;
+//      position: absolute;
+//      height: 45px;
+//      width: 50px;
+//    }
+//
+//    .filter-icon {
+//      background-image: url("./img/filter.png");
+//      background-position: 30px;
+//      background-repeat: no-repeat;
+//      position: absolute;
+//      height: 45px;
+//      width: 120px;
+//      right: 0;
+//      top: 0;
+//      padding-top: 13px;
+//      padding-right: 28px;
+//      text-align: end;
+//      border-left: 1px solid #DADADA;
+//    }
+//
+//    input {
+//      width: 260px;
+//      height: 45px;
+//      margin-left: 45px;
+//      border: 0;
+//
+//      &:focus {
+//        box-shadow: unset;
+//        border: 0;
+//      }
+//    }
+//  }
+//}
+//
+//.guid-wrapper {
+//  z-index: 12;
+//  padding-top: 2.2%;
+//  width: 85px;
+//  height: 100vh;
+//  position: fixed;
+//  left: 0;
+//  top: 0;
+//  .brand-text{
+//    font-size: 18px;
+//    line-height: 25px;
+//  }
+//  .guide-logo{
+//    position: relative;
+//    width: 100%;
+//    align-items: center;
+//    height: 50px;
+//    background-image: url("./img/guide-logo1.png");
+//    background-repeat: no-repeat;
+//    background-position: center;
+//    &:nth-child(2){
+//      margin-top: 100px;
+//    }
+//    &:nth-child(3){
+//      background-image: url("./img/guide-logo2.png");
+//    }
+//    &:nth-child(4){
+//      background-image: url("./img/guide-logo3.png");
+//    }
+//    &:nth-child(5){
+//      background-image: url("./img/guide-logo4.png");
+//    }
+//    .tooltiptext {
+//      visibility: hidden;
+//      width: 120px;
+//      background-color: black;
+//      color: #fff;
+//      text-align: center;
+//      border-radius: 6px;
+//      padding: 5px 0;
+//      position: absolute;
+//      z-index: 4;
+//      top: 9px;
+//      left: 110%;
+//    }
+//
+//    .tooltiptext::after {
+//      content: "";
+//      position: absolute;
+//      top: 50%;
+//      right: 100%;
+//      margin-top: -5px;
+//      border-width: 5px;
+//      border-style: solid;
+//      border-color: transparent black transparent transparent;
+//    }
+//    &:hover .tooltiptext {
+//      visibility: visible;
+//      visibility: visible;
+//    }
+//  }
+//}
+//
+//.content-area {
+//  margin-left: 130px;
+//  width: 44%;
+//  .top-head-news{
+//    .bg-linear{
+//      position: absolute;
+//      width: 100%;
+//      height: 100%;
+//      background: linear-gradient(hsla(0,0%,100%,0),rgba(0,0,0,.8));
+//      border-radius: 10px;
+//      z-index: 10;
+//    }
+//    .column:last-child {
+//      padding-bottom: 60px;
+//    }
+//    .column::after {
+//      content: '';
+//      clear: both;
+//      display: block;
+//    }
+//    .column div {
+//      position: relative;
+//      float: left;
+//      width: 312px;
+//      height: 190px;
+//      margin: 0 0 0 25px;
+//      padding: 0;
+//    }
+//    .column div:first-child {
+//      margin-left: 0;
+//    }
+//    figure {
+//      position: relative;
+//      border-radius: 10px;
+//      width: 312px;
+//      height: 190px;
+//      margin: 0;
+//      padding: 0;
+//      background: #fff;
+//      overflow: hidden;
+//    }
+//    .hover01 figure img {
+//      width: 100%;
+//      -webkit-transform: scale(1.03);
+//      transform: scale(1.03);
+//      -webkit-transition: .3s ease-in-out;
+//      transition: .3s ease-in-out;
+//    }
+//    .hover01 figure:hover img {
+//      -webkit-transform: scale(1.08);
+//      transform: scale(1.08);
+//    }
+//
+//  }
+//  .area-text{
+//    color: #ffff;
+//    position: absolute;
+//    font-weight: 500;
+//    font-size: 17px;
+//    line-height: 24px;
+//    left: 37px;
+//    bottom: 17px;
+//    z-index: 11;
+//    span{
+//      color: #bfbfbf;
+//      font-size: 13px;
+//      line-height: 15px;
+//    }
+//  }
+//  .area-news{
+//    padding: 40px 18px 0 18px;
+//    .news-img{
+//      height: 130px;
+//      width: 130px;
+//    }
+//    .news-content{
+//      margin-left: -6px;
+//    }
+//    .my-line{
+//      height: 4px;
+//      bottom: 50px;
+//      background: #F2F2F2;
+//      z-index: 12;
+//      left: 0;
+//    }
+//    .news-add{
+//      padding: 11px 11px 0 11px;
+//      .logo-site{
+//        img{
+//          height: 15px;
+//          width: 15px;
+//        }
+//        span{
+//          font-size: 13px;
+//          line-height: 13px;
+//        }
+//      }
+//    }
+//    &:hover{
+//      .news-content{
+//        transition: 0.3s ease;
+//        box-shadow:  0 2px 4px rgba(0, 0, 0, 0.109566);
+//      }
+//      .my-line{
+//        box-shadow:  0 2px 4px rgba(0, 0, 0, 0.109566);
+//        transition: 0.3s ease;
+//      }
+//    }
+//  }
+//  .news-text{
+//    font-size: 18px;
+//  }
+//}
+//
+//.aside {
+//  .sign-up{
+//    background: #FAFAFB;
+//    border: 1px solid #9f9f9f;
+//    .mn-text-gray{
+//      padding-top: 10px!important;
+//    }
+//    .sign{
+//      padding-top: 10px!important;
+//      transition: 0.5s ease;
+//      border-radius: 25px 0 0 25px;
+//      .round{
+//        height: 27px;
+//        width: 27px;
+//        background: #41C72C;
+//        border-radius: 50%;
+//        background-image: url("./img/arrowright.png");
+//        background-repeat: no-repeat;
+//        background-position: -11px;
+//      }
+//      &:hover{
+//        background: rgba(219, 219, 220, 0.5);
+//      }
+//    }
+//    .icon{
+//      transition: 0.4s ease;
+//      height: 32px;
+//      width: 32px;
+//      background: #f3f2f2;
+//      border-radius: 50%;
+//      &:hover{
+//        background: black;
+//      }
+//    }
+//  }
+//}
