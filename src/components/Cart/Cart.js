@@ -12,7 +12,6 @@ class Cart extends Component {
             <section>
                 <ProductConsumer>
                     {value => {
-                        console.log(value);
                         const {cart} = value;
                         if (cart.length > 0) {
                             return (

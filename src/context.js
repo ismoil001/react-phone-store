@@ -61,20 +61,16 @@ class ProductProvider extends Component {
         })
     };
     handleDetail = (id) => {
-        console.log(id);
         const product = this.getItem(id);
         this.setState(() =>{
             return {detailProducts: product}
         });
-        console.log('Hello from detail')
     };
     addToCart = id => {
         let tempProducts = [...this.state.products];
         const index = tempProducts.indexOf(this.getItem(id));
         const product = tempProducts[index];
-        console.log(product.inCart)
         product.inCart = true;
-        console.log(product.inCart)
         product.count = 1;
         const price = product.price;
         product.total = price;
